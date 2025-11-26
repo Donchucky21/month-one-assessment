@@ -1,0 +1,8 @@
+# Ignore Terraform-managed dependency files (like large provider binaries)
+.terraform/
+.terraform.lock.hcl
+
+# Ignore the state file which often contains sensitive data
+# And should generally be managed remotely (like with Terraform Cloud/S3)
+*.tfstate
+*.tfstate.*
